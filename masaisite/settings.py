@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['masai-blog-c3gl.onrender.com']
 
 
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/masai/'
 
 # Application definition
 
