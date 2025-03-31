@@ -1,4 +1,5 @@
 ﻿from openai import OpenAI
+from decouple import config
 
 class ChatGptAi:
     def __init__(self):
@@ -6,7 +7,8 @@ class ChatGptAi:
 
     def response_contents(self, category,styleoption,toneoption):
         print('category: ' + category)
-        client = OpenAI(api_key="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")
+        api_key = config("OPENAI_API_KEY")
+        client = OpenAI(api_key=api_key)
 
         prompt = f"""
                 당신은 실제로 블로그를 운영 중인 작가입니다. 
