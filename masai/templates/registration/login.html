@@ -1,6 +1,15 @@
-<h2>ทฮฑืภฮ</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">ทฮฑืภฮ</button>
-</form>
+๏ปฟ<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>๋ก๊ทธ์ธ</title>
+</head>
+<body>
+  <h2>๋ก๊ทธ์ธ</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">๋ก๊ทธ์ธ</button>
+  </form>
+</body>
+</html>
