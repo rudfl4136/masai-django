@@ -8,6 +8,7 @@ class ChatGptAi:
     def response_contents(self, category,styleoption,toneoption):
         print('category: ' + category)
         api_key = config("OPENAI_API_KEY")
+        print("🔑 Loaded API Key:", api_key) 
         client = OpenAI(api_key=api_key)
 
         prompt = f"""
