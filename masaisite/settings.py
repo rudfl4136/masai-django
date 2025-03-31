@@ -31,6 +31,7 @@ SECRET_KEY = 'django-insecure-uob&x_ex*c#!rck9h81^ao2^hesbse%ko_jr*!2t^*n$y_93bv
 DEBUG = True
 
 ALLOWED_HOSTS = ['masai-blog-c3gl.onrender.com']
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
