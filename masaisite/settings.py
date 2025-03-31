@@ -33,6 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['masai-blog-c3gl.onrender.com']
 #ALLOWED_HOSTS = ['*']
 
+LOGIN_URL = '/accounts/login/'
 
 # Application definition
 
