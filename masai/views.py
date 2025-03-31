@@ -5,7 +5,9 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from .models import BlogKeyword
 from masai.service.chatgptAi import ChatGptAi
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def index(request):
     category_list = BlogKeyword.objects.order_by('-worked_date')
     context = {
@@ -13,6 +15,7 @@ def index(request):
         }
     return render(request, 'masai/index.html', context)
 
+@login_required
 @csrf_exempt
 def ai_request(request):
     if request.method == "POST":
