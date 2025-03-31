@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-uob&x_ex*c#!rck9h81^ao2^hesbse%ko_jr*!2t^*n$y_93bv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['masai-blog-c3gl.onrender.com']
 
 
 # Application definition
